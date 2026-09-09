@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* Field-journal palette: warm paper, ink, moss, clay, gold - deliberately
+     avoiding the default cream/terracotta AI palette and the near-black+neon combo. */
+  --color-paper: #f0ece0;
+  --color-paper-card: #faf7ef;
+  --color-ink: #23281f;
+  --color-moss: #3f6b4a;
+  --color-moss-dark: #2c4b34;
+  --color-clay: #b95c34;
+  --color-clay-dark: #96471f;
+  --color-gold: #b3892f;
+  --color-line: #d9d2bd;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* Visible keyboard focus everywhere, styled to match the ink/gold palette
+   instead of the browser default blue. */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
