@@ -4,7 +4,7 @@ A small fan site for Pokémon: browse the Pokédex, search by name, save favouri
 organise them into named "expedition logs" (groups). Built for the MPF front-end
 technical exercise.
 
-**Live demo:** https://temporary-brisk-coral-qsoaepz.vercel.app
+**Live demo:** https://pokedex-companion-sandy.vercel.app
 
 ## Running locally
 
